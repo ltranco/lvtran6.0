@@ -62,7 +62,7 @@ body {
     font-size: 37px;
 }
 .headerCustom h2 {
-    font-family: "Source Sans Pri", sans-serif;
+    font-family: "Source Sans Pro", sans-serif;
     color: #000;
     font-weight: 700;
     font-size: 12px;
@@ -85,14 +85,15 @@ body {
     font-size: 30px !important; 
     color: white;
     text-align: center;
-    font-family: "Source Sans Pri", sans-serif;
 }
 #myName > h1 > span {
     font-weight: 100 !important;
+    font-family: "Roboto", sans-serif;
 }
 #myName h1 {
     margin: 10px 0 0 0;
-    font-weight: 700;
+    font-weight: 400;
+    font-family: "Roboto", sans-serif;
 }
 
 #myName h2, #myName ul{
