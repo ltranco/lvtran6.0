@@ -49,14 +49,10 @@ body {
 }
 .headerCustomDiv2 {
     display: inline-block;
-    margin-top: 10px;
     vertical-align: top;
     text-align: center;
 }
-.headerCustomDiv2 ul {
-    text-align: left;
-    margin: 0 0 0 23px;
-}
+
 .headerCustomDiv2 ul li {
     display: inline-block;
 }
@@ -64,17 +60,12 @@ body {
     color: #fff;
     font-family: "Source Sans Pro", sans-serif;
     font-size: 37px;
-    font-weight: lighter;
-    text-align: left;
-    margin: 15px 0 0 21px;
 }
 .headerCustom h2 {
     font-family: "Source Sans Pri", sans-serif;
     color: #000;
     font-weight: 700;
     font-size: 12px;
-    text-align: left;
-    margin: 5px 0 5px 25px;
 }
 .headerCustom img {
     width: 30px;
@@ -90,20 +81,23 @@ body {
     -webkit-border-radius: 75px;
     -moz-border-radius: 75px;
 }
-
-/* Animation on load */
-.startLoading {
-    opacity: 0;
+#myName {
+    font-size: 30px !important; 
+    color: white;
+    text-align: center;
+    font-family: "Source Sans Pri", sans-serif;
 }
-.endLoading {
-    opacity: 1;
-    -webkit-transition: opacity 1.5s ease-in;
-    -moz-transition: opacity 1.5s ease-in;
-    -ms-transition: opacity 1.5s ease-in;
-    -o-transition: opacity 1.5s ease-in;
-    transition: opacity 1.5s ease-in;
+#myName > h1 > span {
+    font-weight: 100 !important;
+}
+#myName h1 {
+    margin: 40px 0 0 0;
+    font-weight: 700;
 }
 
+#myName h2, #myName ul{
+    margin: 3px 0 0 0;
+}
 /* Skill bars */
 .skillbar {
     vertical-align:middle;
