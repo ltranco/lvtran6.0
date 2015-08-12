@@ -16,7 +16,7 @@ body {
 /* Intro */
 #intro {
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: 19px;
+    font-size: 19px !important;
     font-weight: lighter;
 }
 
@@ -156,20 +156,20 @@ body {
 /* Timeline */
 .timelinewrap {
     float: right;
+    margin-top: 35px;
     font-family: 'Source Sans Pro', sans-serif;
 }
 .timeline {
     position: relative;
-    margin-top: 20px;
-    padding: 1em 0;
+    /*margin-top: 20px;*/
+    /*padding: 1em 0;*/
     list-style-type: none;
 }
+
 .timeline:before {
     position: absolute;
-    top: 0;
     content: ' ';
-    display: block;
-    width: 6px;
+    width: 5px;
     height: 100%;
     margin-left: 12px;
     background: -moz-linear-gradient(top, rgba(80, 80, 80, 0) 0, #505050 8%, #505050 92%, rgba(80, 80, 80, 0) 100%);
@@ -178,7 +178,7 @@ body {
     background: -o-linear-gradient(top, rgba(80, 80, 80, 0) 0, #505050 8%, #505050 92%, rgba(80, 80, 80, 0) 100%);
     background: -ms-linear-gradient(top, rgba(80, 80, 80, 0) 0, #505050 8%, #505050 92%, rgba(80, 80, 80, 0) 100%);
     background: linear-gradient(to bottom, rgba(80, 80, 80, 0) 0, #505050 8%, #505050 92%, rgba(80, 80, 80, 0) 100%);
-    z-index: 5;
+    z-index: 1;
 }
 .timeline li {
     padding: 0 0 20px 0;
@@ -186,7 +186,6 @@ body {
 .timeline li:after {
     content: "";
     display: block;
-    height: 0;
     clear: both;
     visibility: hidden;
 }
@@ -198,8 +197,8 @@ body {
 }
 .direction-r {
     position: relative;
-    width: 420px;
-    float: right;
+    /*width: 420px;*/
+    float: left;
     text-align: left;
     padding-left: 45px;
 }
@@ -361,8 +360,8 @@ footer {
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 13px;
     line-height: 13px;
-    font-weight: lighter;
     margin-top: 20px;
+    font-weight: 500;
 }
 
 footer a:hover {
