@@ -124,6 +124,7 @@ body {
     font-family: 'Source Sans Pro', sans-serif !important;
     font-size: 17px;
     font-weight: lighter;
+    vertical-align: middle;
 }
 .moreBadge, .techBadge {
     position: relative;
@@ -150,9 +151,11 @@ body {
 }
 .pTitle {
     font-weight: 700;
-    min-width: 116px;
+    font-size: 14px;
 }
-
+.pTitle > img {
+    float: left;
+}
 /* Timeline */
 .timelinewrap {
     float: right;
