@@ -140,11 +140,25 @@ body {
     color: white;
 }
 
+.card-panel {
+    background-color: #1485CC;
+}
+.white-text {
+    font-weight: 300;
+    font-size: 13px;
+}
+.circle {
+    width: 55px;
+    height: 55px;
+    float: left;
+    margin-right: 10px;
+}
 .moreBadge {
     background: #FF5050;
 }
 .techBadge {
     background: #ffa726;
+    cursor: default;
 }
 .moreBadge a {
     color: #fff;

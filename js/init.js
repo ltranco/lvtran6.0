@@ -16,11 +16,11 @@ function initLVT() {
 		});
 	});
 	$("#eventButton").click(function() {
-		$("#portfolio").fadeOut(200);
-		$("#events").fadeIn(200);		
+		$("#portfolio").fadeOut(300);
+		$("#events").fadeIn(300);		
 	});
 	$("#projButton").click(function() {
-		$("#portfolio").fadeIn(200);
-		$("#events").fadeOut(200);		
+		$("#events").fadeOut(300);		
+		$("#portfolio").fadeIn(300);
 	});
 }
