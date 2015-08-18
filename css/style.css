@@ -9,10 +9,6 @@ a {
 a:hover {
     color: #ff5050;
 }
-body {
-    opacity: 0;
-}
-
 /* Intro */
 #intro {
     font-family: 'PT Sans', sans-serif;
