@@ -1,5 +1,5 @@
 @charset 'UTF-8';
-@import url(http: //fonts.googleapis.com/css?family=Source+Sans+Pro:200);
+@import url(http://fonts.googleapis.com/css?family=PT+Sans);
 
 /* Global */
 a {
@@ -15,11 +15,14 @@ body {
 
 /* Intro */
 #intro {
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 19px !important;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 21px !important;
     font-weight: lighter;
 }
 
+#intro p {
+    margin-top: 0px;
+}
 /* Intro View */
 .introView {
     background-color: #FF3535;
@@ -58,7 +61,7 @@ body {
 }
 .headerCustom h1 {
     color: #fff;
-    font-family: "Source Sans Pro", sans-serif;
+    font-family: 'PT Serif', serif;
     font-size: 37px;
 }
 .headerCustom h2 {
@@ -109,6 +112,7 @@ body {
 /* Control buttons */
 #control {
     text-align: center;
+    font-family: "Roboto", sans-serif;
 }
 #languageSkill p{
     margin-left: 20px;
@@ -141,11 +145,12 @@ body {
 }
 
 .card-panel {
-    background-color: #1485CC;
+    background-color: white;
 }
 .white-text {
     font-weight: 300;
     font-size: 13px;
+    color: black !important;
 }
 .circle {
     width: 55px;
@@ -157,7 +162,7 @@ body {
     background: #FF5050;
 }
 .techBadge {
-    background: #ffa726;
+    background: gray;
     cursor: default;
 }
 .moreBadge a {
@@ -166,15 +171,15 @@ body {
 .pTitle {
     font-weight: 700;
     font-size: 14px;
+    color: #ff3232;
 }
 .pTitle > img {
     float: left;
 }
 /* Timeline */
 .timelinewrap {
-    float: right;
     margin-top: 35px;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'PT Sans', sans-serif;
 }
 .timeline {
     position: relative;
@@ -229,9 +234,14 @@ body {
     background: #f8f8f8;
     padding: 6px 10px;
     border-radius: 5px;
-    font-weight: 400;
+    font-weight: 500;
     text-align: left;
     font-size: 13px;
+}
+
+.flag a {
+    text-decoration: none !important;
+    font-weight: 500;
 }
 .direction-l .flag {
     -webkit-box-shadow: -1px 1px 1px rgba(0, 0, 0, .15), 0 0 1px rgba(0, 0, 0, .15);
@@ -301,7 +311,7 @@ body {
 .desc {
     color: #000;
     font-size: 12px;
-    font-weight: lighter;
+    font-weight: 600;
 }
 .direction-r .desc {
     margin-top: 5px;
