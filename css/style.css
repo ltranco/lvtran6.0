@@ -9,7 +9,7 @@ a {
 a:hover {
     color: #ff5050;
 }
-body {
+.container {
     display: none;
 }
 /* Intro */
@@ -44,6 +44,7 @@ body {
 .headerCustom {
     background-color: #FF3535;
     text-align: center;
+    display: none;
 }
 .headerCustomDiv1 {
     display: inline-block;
@@ -128,6 +129,7 @@ body {
     font-size: 17px;
     font-weight: lighter;
     vertical-align: middle;
+    display: none;
 }
 .moreBadge, .techBadge {
     position: relative;
@@ -379,6 +381,7 @@ body {
 }
 
 footer {
+    display: none;
     text-align: center;
     position: relative;
     overflow: hidden;
