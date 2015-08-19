@@ -8,6 +8,7 @@ function initLVT() {
 	$("footer").hide();
 	$(".introText").delay(1500).fadeOut(700);
 	$(".introView").delay(1800).slideUp('slow', function() {
+		$("body").show();
 		$(".headerCustom").fadeIn(700, function() {
 			$(".container").fadeIn(1000, function() {
 				$("footer").fadeIn();		
