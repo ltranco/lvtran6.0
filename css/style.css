@@ -67,7 +67,7 @@ body {
 .headerCustom h1 {
     color: black;
     font-family: 'PT Serif', serif;
-    font-size: 127px;
+    font-size: 107px;
     display: inline-block;
 }
 .headerCustom h2 {
@@ -136,9 +136,11 @@ body {
 }
 
 /* Portfolio */
+table.hoverable > tbody > tr:hover {
+    background-color: #F8F8FF; 
+}
 #portfolio, #events{
-    font-family: 'Georgia', serif !important;
-    font-size: 17px;
+    font-family: 'source serif pro', georgia, serif;
     font-weight: lighter;
     vertical-align: middle;
     display: none;
@@ -162,8 +164,9 @@ body {
 }
 .white-text {
     font-weight: 300;
-    font-size: 13px;
+    font-size: 18px;
     color: black !important;
+    display: block;
 }
 .circle {
     width: 55px;
@@ -172,7 +175,7 @@ body {
     margin-right: 10px;
 }
 .moreBadge {
-    background: #FF5050;
+    background: #191919;
     font-family: 'Source Sans Pro', sans-serif;
 }
 .techBadge {
@@ -186,8 +189,8 @@ body {
 .pTitle {
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 700;
-    font-size: 14px;
-    color: #ff3232;
+    font-size: 17px;
+    color: black;
 }
 .pTitle > img {
     float: left;

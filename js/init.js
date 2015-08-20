@@ -14,14 +14,14 @@ function initLVT() {
 		});
 	});
 	$("#eventButton").click(function() {
-		$('html,body').animate({scrollTop: $(this).offset().top}, 300);
+		$('html,body').animate({scrollTop: $(this).offset().top - 30}, 300);
 		
 		console.log($(this).height());
 		$("#portfolio").fadeOut(300);
 		$("#events").fadeIn(300);		
 	});
 	$("#projButton").click(function() {
-		$('html,body').animate({scrollTop: $(this).offset().top}, 300);
+		$('html,body').animate({scrollTop: $(this).offset().top - 30}, 300);
 		console.log($(this).height());
 		$("#events").fadeOut(300);		
 		$("#portfolio").fadeIn(300);
