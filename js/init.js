@@ -41,11 +41,11 @@ function initLVT() {
 		$("#resume").fadeIn(300);
 	});
 
-	var $window = $(window), $stickyEl = $('.control'), elTop = $stickyEl.offset().top, inTop = $("#intro").offset().top;
+	var $window = $(window), $stickyEl = $('.control'), elTop = $stickyEl.offset().top;
     $window.scroll(function() {
     	if($window.scrollTop() == 0) {
     		keepThisOffset = -1;
     	}
-        $stickyEl.toggleClass('stickyControl', $window.scrollTop() > elTop);
+        $stickyEl.toggleClass('stickyControl', $window.scrollTop() > 411);
     });
 }
