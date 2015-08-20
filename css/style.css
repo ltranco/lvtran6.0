@@ -1,5 +1,4 @@
 @charset 'UTF-8';
-@import url(http://fonts.googleapis.com/css?family=PT+Sans);
 
 /* Global */
 a {
@@ -9,14 +8,18 @@ a {
 a:hover {
     color: #ff5050;
 }
+body {
+}
 .container {
     display: none;
 }
 /* Intro */
 #intro {
-    font-family: 'PT Sans', sans-serif;
+    font-family: 'Georgia', serif;
     font-size: 21px !important;
     font-weight: lighter;
+    padding: 5px 5px 5px 15px;
+    margin-top: 35px;
 }
 
 #intro p {
@@ -117,7 +120,8 @@ a:hover {
 #languageSkill p{
     margin-left: 20px;
     display: inline;
-    font-size: 15px;
+    font-size: 13px;
+    font-family: "Sans Source Pro", sans-serif;   
 }
 .btn-small {
     margin: 0 8px 0 8px;
@@ -125,7 +129,7 @@ a:hover {
 
 /* Portfolio */
 #portfolio, #events{
-    font-family: 'Source Sans Pro', sans-serif !important;
+    font-family: 'Georgia', serif !important;
     font-size: 17px;
     font-weight: lighter;
     vertical-align: middle;
@@ -161,15 +165,18 @@ a:hover {
 }
 .moreBadge {
     background: #FF5050;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 .techBadge {
     background: gray;
     cursor: default;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 .moreBadge a {
     color: #fff;
 }
 .pTitle {
+    font-family: 'Source Sans Pro', sans-serif;
     font-weight: 700;
     font-size: 14px;
     color: #ff3232;
@@ -181,6 +188,7 @@ a:hover {
 .timelinewrap {
     margin-top: 35px;
     font-family: 'PT Sans', sans-serif;
+    padding: 5px 5px 5px 15px;
 }
 .timeline {
     position: relative;
