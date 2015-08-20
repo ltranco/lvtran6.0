@@ -13,6 +13,9 @@ body {
 .container {
     display: none;
 }
+.btn-small {
+    background-color: black;
+}
 /* Intro */
 #intro {
     font-family: 'Georgia', serif;
@@ -23,7 +26,7 @@ body {
 }
 
 #intro p {
-    margin-top: 0px;
+    margin: 10px 0 15px 10px;
 }
 /* Intro View */
 .introView {
@@ -46,8 +49,7 @@ body {
 
 /* Header */
 .headerCustom {
-    background-color: #FF3535;
-    text-align: center;
+    text-align: left;
     display: none;
 }
 .headerCustomDiv1 {
@@ -57,22 +59,23 @@ body {
 .headerCustomDiv2 {
     display: inline-block;
     vertical-align: top;
-    text-align: center;
+    text-align: left;
 }
-
 .headerCustomDiv2 ul li {
     display: inline-block;
 }
 .headerCustom h1 {
-    color: #fff;
+    color: black;
     font-family: 'PT Serif', serif;
-    font-size: 37px;
+    font-size: 127px;
+    display: inline-block;
 }
 .headerCustom h2 {
     font-family: "Source Sans Pro", sans-serif;
     color: #000;
-    font-weight: 700;
-    font-size: 12px;
+    font-weight: 500;
+    font-size: 15px;
+    display: inline-block;
 }
 .headerCustom img {
     width: 30px;
@@ -103,8 +106,9 @@ body {
     font-family: "Roboto", sans-serif;
 }
 
-#myName h2, #myName ul{
-    margin: 3px 0 0 0;
+#myName ul{
+    text-align: left;
+    margin: 0 0 0 10px;
 }
 /* Skill bars */
 .skillbar {
@@ -117,6 +121,9 @@ body {
 #control {
     text-align: center;
     font-family: "Roboto", sans-serif;
+}
+#languageSkill {
+    display: none;
 }
 #languageSkill p{
     margin-left: 20px;
@@ -187,6 +194,7 @@ body {
 }
 /* Timeline */
 .timelinewrap {
+    display: none;
     margin-top: 35px;
     font-family: 'PT Sans', sans-serif;
     padding: 5px 5px 5px 15px;
@@ -390,18 +398,18 @@ body {
 }
 
 footer {
-    display: none;
     text-align: center;
-    position: relative;
+    position: fixed;
+    width: 100%;
     overflow: hidden;
-    background-color: #FF3535;
+    bottom: 0;
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 13px;
     line-height: 13px;
-    margin-top: 20px;
+    width: 100%;
     font-weight: 500;
 }
 
 footer a:hover {
-    color: white;
+    color: #ff3232;
 }
