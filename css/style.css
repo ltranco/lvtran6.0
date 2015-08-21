@@ -167,9 +167,6 @@ table.hoverable > tbody > tr:hover {
     vertical-align: middle;
     display: none;
 }
-#resume {
-    margin-bottom: 80px;
-}
 .moreBadge, .techBadge {
     position: relative;
     display: inline-block;
