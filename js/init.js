@@ -5,10 +5,9 @@ function initLVT() {
  		$("footer").html("<p>\"It doesn't matter if the glass is half empty or half full; all that matters is you're the one pouring the water.\" - Mark Cuban | Long Tran &copy; 2015");
 	}
 	$(".introText").delay(1500).fadeOut(700);
-	$(".introView").delay(1800).slideUp('slow', function() {
-		$("introView").slideDown();
-		$(".headerCustom").slideDown('slow', function() {
-			$(".container").slideDown('slow', function() {
+	$(".introView").delay(1800).slideUp('fast', function() {
+		$(".headerCustom").slideDown('fast', function() {
+			$(".container").slideDown('fast', function() {
 				$("footer").fadeIn();		
 			});
 		});
@@ -18,27 +17,21 @@ function initLVT() {
 			keepThisOffset = $(this).offset().top - 30;
 			$('html,body').animate({scrollTop: keepThisOffset}, 200);
 		}
-		$("#portfolio").fadeOut(300);
-		$("#resume").fadeOut(300);		
-		$("#events").fadeIn(300);
+		fade("#portfolio", "#resume", "#events");
 	});
-	$("#projButton").click(function() {
+	$("#portfolioButton").click(function() {
 		if(keepThisOffset == -1) {
 			keepThisOffset = $(this).offset().top - 30;
 			$('html,body').animate({scrollTop: keepThisOffset}, 200);
 		}
-		$("#events").fadeOut(300);		
-		$("#resume").fadeOut(300);
-		$("#portfolio").fadeIn(300);
+		fade("#events", "#resume", "#portfolio");
 	});
 	$("#resumeButton").click(function() {
 		if(keepThisOffset == -1) {
 			keepThisOffset = $(this).offset().top - 30;
 			$('html,body').animate({scrollTop: keepThisOffset}, 200);
 		}
-		$("#events").fadeOut(300);		
-		$("#portfolio").fadeOut(300);
-		$("#resume").fadeIn(300);
+		fade("#events", "#portfolio", "#resume");
 	});
 
 	var $window = $(window), $stickyEl = $('.control'), elTop = $stickyEl.offset().top;
@@ -48,4 +41,14 @@ function initLVT() {
     	}
         $stickyEl.toggleClass('stickyControl', $window.scrollTop() > 411);
     });
+}
+
+function fade(a, b, c, n) {
+	if(!n) {
+		n = 250;
+	}
+	$(a).fadeOut(n);
+	$(b).fadeOut(n);
+	$(c).fadeIn(n);
+	$("footer").css("position", "relative");
 }
