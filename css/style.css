@@ -8,9 +8,11 @@ a {
 a:hover {
     color: #ff5050;
 }
-body {
+html, body {
+    height: 100%;
 }
 .container {
+    height: 100%;
     display: none;
 }
 .btn-small {
@@ -164,6 +166,9 @@ table.hoverable > tbody > tr:hover {
     margin-bottom: 30px;
     vertical-align: middle;
     display: none;
+}
+#resume {
+    margin-bottom: 80px;
 }
 .moreBadge, .techBadge {
     position: relative;
@@ -357,6 +362,7 @@ table.hoverable > tbody > tr:hover {
 .timeline {
     width: 100%;
     padding: 0 0 1em;
+    z-index: 8;
 }
 .direction-l, .direction-r {
     float: none;
@@ -368,7 +374,6 @@ table.hoverable > tbody > tr:hover {
 }
 .flag {
     background: #fff;
-    z-index: 15;
 }
 .direction-l .flag:before, .direction-r .flag:before {
     position: absolute;
@@ -378,8 +383,7 @@ table.hoverable > tbody > tr:hover {
     height: 20px;
     background: #fff;
     border-radius: 10px;
-    border: 4px solid #ff5050;
-    z-index: 10;
+    border: 4px solid black;
 }
 .direction-l .flag:after, .direction-r .flag:after {
     content: "";
@@ -396,7 +400,6 @@ table.hoverable > tbody > tr:hover {
     display: block;
     position: relative;
     margin: 4px 0 0;
-    z-index: 14;
 }
 .direction-l .time-wrapper, .direction-r .time-wrapper {
     float: none;
@@ -407,25 +410,22 @@ table.hoverable > tbody > tr:hover {
     -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, .2);
     -moz-box-shadow: 0 0 1px rgba(0, 0, 0, .2);
     box-shadow: 0 0 1px rgba(0, 0, 0, .2);
-    z-index: 15;
 }
 .direction-l .desc, .direction-r .desc {
     position: relative;
-    z-index: 15;
 }
 }
 
 footer {
     text-align: center;
-    width: 100%;
     overflow: hidden;
-    position: absolute;
     bottom: 0;
     font-family: 'Georgia', serif;
     font-size: 16px;
-    line-height: 13px;
+    line-height: 15px;
     width: 100%;
     font-weight: 500;
+
 }
 
 footer a:hover {

@@ -50,5 +50,6 @@ function fade(a, b, c, n) {
 	$(a).fadeOut(n);
 	$(b).fadeOut(n);
 	$(c).fadeIn(n);
+	//$("footer").css("margin-top", "0px");
 	$("footer").css("position", "relative");
 }
