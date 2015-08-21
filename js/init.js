@@ -13,7 +13,7 @@ function initLVT() {
 			});
 		});
 	});
-	$("#eventButton").click(function() {
+	$("#eventsButton").click(function() {
 		if(keepThisOffset == -1) {
 			keepThisOffset = $(this).offset().top - 30;
 			$('html,body').animate({scrollTop: keepThisOffset}, 200);
@@ -51,6 +51,8 @@ function fade(a, b, c, n) {
 	$(a).fadeOut(n);
 	$(b).fadeOut(n);
 	$(c).fadeIn(n);
-	//$("footer").css("margin-top", "0px");
+	$(a + "Button").css("backgroundColor", "black");
+	$(b + "Button").css("backgroundColor", "black");
+	$(c + "Button").css("backgroundColor", "#ff3232");
 	$("footer").css("position", "relative");
 }
