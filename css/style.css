@@ -362,6 +362,7 @@ table.hoverable > tbody > tr:hover {
 .timeline {
     width: 100%;
     z-index: 8;
+    font-weight: lighter;
 }
 .direction-l, .direction-r {
     float: none;
