@@ -371,8 +371,11 @@ table.hoverable > tbody > tr:hover {
 }
 .flag {
     background: #fff;
+}
+
+.flag, .flag a {
     font-weight: 400;
-    font-size: 15px;
+    font-size: 13px;
 }
 .direction-l .flag:before, .direction-r .flag:before {
     position: absolute;
