@@ -137,7 +137,7 @@ body {
 .stickyControl {
     padding: 10px 0 20px 0;
     width: 100%;
-    background-color: white;
+    background-image: url("../images/bg.png");
     position: fixed;
     top: 25px;
     z-index: 10;
