@@ -12,7 +12,7 @@ html, body {
     height: 100%;
 }
 body {
-    background-image: url("../images/bg.png");
+    background-image: url("../images/bg.jpg");
 }
 .container {
     height: 100%;
@@ -137,7 +137,7 @@ body {
 .stickyControl {
     padding: 10px 0 20px 0;
     width: 100%;
-    background-image: url("../images/bg.png");
+    background-image: url("../images/bg.jpg");
     position: fixed;
     top: 25px;
     z-index: 10;
