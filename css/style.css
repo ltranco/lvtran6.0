@@ -148,15 +148,22 @@ body {
 }
 .skill {
     margin-top: 10px;
+    font-family: "Sans Source Pro", sans-serif;   
+}
+.skill b {
+    font-weight: normal;
 }
 .skill p{
     margin-left: 20px;
     display: inline;
     font-size: 13px;
-    font-family: "Sans Source Pro", sans-serif;   
 }
 .btn-small {
     margin: 0 8px 0 8px;
+}
+.categoryIcon {
+    vertical-align: bottom;
+    margin-right: 5px;
 }
 
 /* Portfolio */
@@ -246,6 +253,7 @@ table.hoverable > tbody > tr:hover {
 }
 .timeline li {
     padding: 0 0 20px 0;
+    margin-bottom: 15px;
 }
 .timeline li:after {
     content: "";
