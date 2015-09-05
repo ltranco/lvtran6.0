@@ -7,8 +7,8 @@ function initLVT() {
 		l2.rel = 'stylesheet';
 		l2.href = 'css/style.css';
 		var h = document.getElementsByTagName('head')[0];
-		h.parentNode.insertBefore(l1, h);
-		h.parentNode.insertBefore(l2, h);
+		h.insertBefore(l1, null);
+		h.insertBefore(l2, null);
      };
 	var raf = requestAnimationFrame || mozRequestAnimationFrame ||
 	  webkitRequestAnimationFrame || msRequestAnimationFrame;
