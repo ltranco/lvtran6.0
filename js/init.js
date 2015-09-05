@@ -1,4 +1,20 @@
 function initLVT() {
+	var cb = function() {
+		var l1 = document.createElement('link'); 
+		l1.rel = 'stylesheet';
+		l1.href = 'css/materialize.min.css';
+		var l2 = document.createElement('link'); 
+		l2.rel = 'stylesheet';
+		l2.href = 'css/style.css';
+		var h = document.getElementsByTagName('head')[0];
+		h.parentNode.insertBefore(l1, h);
+		h.parentNode.insertBefore(l2, h);
+     };
+	var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+	  webkitRequestAnimationFrame || msRequestAnimationFrame;
+	if (raf) raf(cb);
+	else window.addEventListener('load', cb);
+
 	var keepThisOffset = -1;
 
 	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
