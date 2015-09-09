@@ -284,7 +284,7 @@ table.hoverable > tbody > tr:hover {
     background: #f8f8f8;
     padding: 6px 10px;
     border-radius: 5px;
-    font-weight: 500;
+    font-weight: lighter;
     text-align: left;
     font-size: 13px;
     z-index: 9;
@@ -292,7 +292,6 @@ table.hoverable > tbody > tr:hover {
 
 .flag a {
     text-decoration: none !important;
-    font-weight: 500;
 }
 .direction-l .flag {
     -webkit-box-shadow: -1px 1px 1px rgba(0, 0, 0, .15), 0 0 1px rgba(0, 0, 0, .15);
@@ -361,7 +360,7 @@ table.hoverable > tbody > tr:hover {
 .desc {
     color: #000;
     font-size: 12px;
-    font-weight: 500;
+    font-weight: lighter;
 }
 .direction-r .desc {
     margin-top: 5px;
