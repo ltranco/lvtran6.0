@@ -235,6 +235,7 @@ table.hoverable > tbody > tr:hover {
 .timeline {
     position: relative;
     list-style-type: none;
+    font-weight: lighter;
 }
 
 .timeline:before {
@@ -364,14 +365,6 @@ table.hoverable > tbody > tr:hover {
 }
 .direction-r .desc {
     margin-top: 5px;
-}
-
-@media only screen and (min-device-width : 768px) { 
-.timeline {
-    z-index: 8;
-    font-weight: lighter !important;
-    color: red;
-}
 }
 
 @media screen and (max-width:660px) {
