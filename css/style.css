@@ -385,7 +385,7 @@ table.hoverable > tbody > tr:hover {
 }
 
 .flag, .flag a {
-    font-weight: 400;
+    font-weight: lighter;
     font-size: 13px;
 }
 .direction-l .flag:before, .direction-r .flag:before {
