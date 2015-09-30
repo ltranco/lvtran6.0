@@ -10,8 +10,7 @@ function initLVT() {
 		h.insertBefore(l1, null);
 		h.insertBefore(l2, null);
      };
-	var raf = requestAnimationFrame || mozRequestAnimationFrame ||
-	  webkitRequestAnimationFrame || msRequestAnimationFrame;
+	var raf = requestAnimationFrame || mozRequestAnimationFrame || webkitRequestAnimationFrame || msRequestAnimationFrame;
 	if (raf) raf(cb);
 	else window.addEventListener('load', cb);
 
