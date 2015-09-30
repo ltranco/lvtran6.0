@@ -9,44 +9,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico"/>
     <!-- Critical CSS loaded first for optimized rendering -->
     <style> 
-      *,::before,::after{box-sizing:inherit;}
-      html{font-family:Roboto,sans-serif; box-sizing:border-box; line-height:1.5; font-weight:normal; color:rgba(0,0,0,0.870588); font-size:15px;}
-      html,body{height:100%;}
-      body{margin:0px; background-image:url(http://lvtran.com/images/bg.jpg);}
-      @font-face{font-family:"Roboto";src:url("font/roboto/Roboto-Thin.woff2") format("woff2"),url("font/roboto/Roboto-Thin.woff") format("woff"),url("font/roboto/Roboto-Thin.ttf") format("truetype");font-weight:200;}
-      @font-face{font-family:"Roboto";src:url("font/roboto/Roboto-Medium.woff2") format("woff2"),url("font/roboto/Roboto-Medium.woff") format("woff"),url("font/roboto/Roboto-Medium.ttf") format("truetype");font-weight:500;}
-      @font-face{font-family:"Roboto";src:url("font/roboto/Roboto-Bold.woff2") format("woff2"),url("font/roboto/Roboto-Bold.woff") format("woff"),url("font/roboto/Roboto-Bold.ttf") format("truetype");font-weight:700;}
-      .introView{position:absolute; width:100%; height:100%; background-color:black;}
-      .introText{position:fixed; top:50%; left:50%; transform:translate(-50%,-50%); font-size:90px; font-weight:700; color:white;}
-      .container{display:none;}
-      .z-depth-1,nav,.card-panel,.card,.toast,.btn,.btn-large,.btn-floating,.dropdown-content,.collapsible,.side-nav{box-shadow:rgba(0,0,0,0.156863) 0px 2px 5px 0px,rgba(0,0,0,0.117647) 0px 2px 10px 0px;}
-      .card{position:relative; overflow:hidden; margin:0.5rem 0px 1rem; transition:box-shadow 0.25s; border-radius:2px; background-color:rgb(255,255,255);}
-      #intro{font-family:Georgia,serif; font-weight:lighter; padding:5px 5px 5px 15px; margin-top:55px; font-size:21px !important;}
-      .headerCustom{text-align:left; display:none;}
-      .headerCustomDiv2{display:inline-block; vertical-align:top; text-align:left;}
-      #myName{color:white; text-align:center; font-size:30px !important;}
-      h1{font-size:4.2rem; margin:2.1rem 0px 1.68rem; line-height:110%;}
-      h1,h2,h3,h4,h5,h6{font-weight:400; line-height:1.1;}
-      .headerCustom h1{color:black; font-family:'PT Serif',serif; font-size:107px; display:inline-block;}
-      #myName h1{margin:10px 0px 0px; font-weight:400; font-family:Roboto,sans-serif;}
-      #myName > h1 > span{font-family:Roboto,sans-serif; font-weight:100 !important;}
-      h2{font-size:3.56rem; line-height:110%; margin:1.78rem 0px 1.424rem;}
-      .headerCustom h2{font-family:Roboto,sans-serif; color:rgb(0,0,0); font-weight:400; font-size:15px; display:inline-block;}
-      ul{list-style-type:none; padding:0px;}
-      #myName ul{text-align:left; margin:0px 0px 0px 10px;}
-      ul li{list-style-type:none;}
-      .headerCustomDiv2 ul li{display:inline-block;}
-      a{background-color:transparent; color:black; text-decoration:none; -webkit-tap-highlight-color:transparent;}
-      .headerCustom a:visited,a:active,a:hover,a:link{text-decoration:none;}
-      img{border:0px;}
-      .headerCustom img{width:30px; height:30px;}
-      #intro p{margin:10px 0px 15px 10px;}
-      .control,.download{text-align:center; font-family:Roboto,sans-serif;}
-      .btn-floating{display:inline-block; color:rgb(255,255,255); position:relative; overflow:hidden; z-index:1; width:37px; height:37px; line-height:37px; padding:0px; border-radius:50%; transition:0.3s; cursor:pointer; vertical-align:middle; background-color:rgb(38,166,154);}
-      .btn-small{background-color:black; margin:0px 8px;}
-      i{line-height:inherit;}
-      .btn i,.btn-large i,.btn-floating i,.btn-large i,.btn-flat i{font-size:1.3rem; line-height:inherit;}
-      .btn-floating i{width:inherit; display:inline-block; text-align:center; color:rgb(255,255,255); font-size:1.6rem; line-height:37px;}
+      .introView,body,html{height:100%}ul,ul li{list-style-type:none}.headerCustom a:visited,a,a:active,a:hover,a:link{text-decoration:none}*,::after,::before{box-sizing:inherit}html{font-family:Roboto,sans-serif;box-sizing:border-box;line-height:1.5;font-weight:400;color:rgba(0,0,0,.870588);font-size:15px}body{margin:0;background-image:url(images/bg.png)}@font-face{font-family:Roboto;src:url(font/roboto/Roboto-Thin.woff2) format("woff2"),url(font/roboto/Roboto-Thin.woff) format("woff"),url(font/roboto/Roboto-Thin.ttf) format("truetype");font-weight:200}@font-face{font-family:Roboto;src:url(font/roboto/Roboto-Medium.woff2) format("woff2"),url(font/roboto/Roboto-Medium.woff) format("woff"),url(font/roboto/Roboto-Medium.ttf) format("truetype");font-weight:500}@font-face{font-family:Roboto;src:url(font/roboto/Roboto-Bold.woff2) format("woff2"),url(font/roboto/Roboto-Bold.woff) format("woff"),url(font/roboto/Roboto-Bold.ttf) format("truetype");font-weight:700}.introView{position:absolute;width:100%;background-color:#000}.introText{position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);font-size:90px;font-weight:700;color:#fff}.btn-floating,.card{position:relative;overflow:hidden}.container{display:none}.btn,.btn-floating,.btn-large,.card,.card-panel,.collapsible,.dropdown-content,.side-nav,.toast,.z-depth-1,nav{box-shadow:rgba(0,0,0,.156863) 0 2px 5px 0,rgba(0,0,0,.117647) 0 2px 10px 0}.card{margin:.5rem 0 1rem;transition:box-shadow .25s;border-radius:2px;background-color:#fff}#intro{font-family:Georgia,serif;font-weight:lighter;padding:5px 5px 5px 15px;margin-top:55px;font-size:21px!important}.headerCustom{text-align:left;display:none}.headerCustom h1,.headerCustom h2,.headerCustomDiv2,.headerCustomDiv2 ul li{display:inline-block}.headerCustomDiv2{vertical-align:top;text-align:left}#myName{color:#fff;text-align:center;font-size:30px!important}h1{font-size:4.2rem;margin:2.1rem 0 1.68rem}h1,h2,h3,h4,h5,h6{font-weight:400;line-height:1.1}.headerCustom h1{color:#000;font-family:'PT Serif',serif;font-size:107px}#myName h1,#myName>h1>span,.control,.download,.headerCustom h2{font-family:Roboto,sans-serif}#myName h1{margin:10px 0 0;font-weight:400}#myName>h1>span{font-weight:100!important}h2{font-size:3.56rem;line-height:110%;margin:1.78rem 0 1.424rem}.headerCustom h2{color:#000;font-weight:400;font-size:15px}ul{padding:0}#myName ul{text-align:left;margin:0 0 0 10px}a{background-color:transparent;color:#000;-webkit-tap-highlight-color:transparent}.btn-floating,.btn-floating i{display:inline-block;color:#fff}img{border:0}.headerCustom img{width:30px;height:30px}#intro p{margin:10px 0 15px 10px}.control,.download{text-align:center}.btn-floating{z-index:1;width:37px;height:37px;line-height:37px;padding:0;border-radius:50%;transition:.3s;cursor:pointer;vertical-align:middle;background-color:#26a69a}.btn-small{background-color:#000;margin:0 8px}i{line-height:inherit}.btn i,.btn-flat i,.btn-floating i,.btn-large i{font-size:1.3rem;line-height:inherit}.btn-floating i{width:inherit;text-align:center;font-size:1.6rem;line-height:37px}
     </style>
   </head>
   <body>
@@ -63,7 +26,7 @@
                   <h1><span>LONG</span> TRAN</h1>
                   <h2>Software Engineer &bull; Realist</h2>
                   <ul>
-                    <li><a href="mailto:lt@ucsd.edu" target="_blank"><img src="images/mail.svg" alt=""></a></li>
+                    <li><a href="mailto:lt@ucsd.edu"><img src="images/mail.svg" alt=""></a></li>
                     <li><a href="http://linkedin.com/in/lvtr4n/" target="_blank"><img src="images/li.svg" alt=""/></a></li>
                     <li><a href="http://github.com/lvtr4n/" target="_blank"><img src="images/git.svg" alt=""></a></li>
                     <li><a href="http://facebook.com/longtran812/" target="_blank"><img src="images/fb.svg" alt=""></a></li>
@@ -89,7 +52,12 @@
             <div class="timelinewrap"> <!-- Timeline -->
               <ul class="timeline">
                 <li><div class="direction-r"><div class="flag-wrapper">
-                  <span class="flag">&#63743; Apple Inc.</span>
+                  <span class="flag">Amazon.com, Inc.</span>
+                  <span class="time-wrapper"><span class="time">Oct 2015 - Dec 2015</span></span></div>
+                  <div class="desc">Software Development Engineer Intern</div></div>
+                </li>
+                <li><div class="direction-r"><div class="flag-wrapper">
+                  <span class="flag"><svg viewBox="0 0 24 24"><path fill="#000000" d="M18.71,19.5C17.88,20.74 17,21.95 15.66,21.97C14.32,22 13.89,21.18 12.37,21.18C10.84,21.18 10.37,21.95 9.1,22C7.79,22.05 6.8,20.68 5.96,19.47C4.25,17 2.94,12.45 4.7,9.39C5.57,7.87 7.13,6.91 8.82,6.88C10.1,6.86 11.32,7.75 12.11,7.75C12.89,7.75 14.37,6.68 15.92,6.84C16.57,6.87 18.39,7.1 19.56,8.82C19.47,8.88 17.39,10.1 17.41,12.63C17.44,15.65 20.06,16.66 20.09,16.67C20.06,16.74 19.67,18.11 18.71,19.5M13,3.5C13.73,2.67 14.94,2.04 15.94,2C16.07,3.17 15.6,4.35 14.9,5.19C14.21,6.04 13.07,6.7 11.95,6.61C11.8,5.46 12.36,4.26 13,3.5Z" /></svg> Apple Inc.</span>
                   <span class="time-wrapper"><span class="time">Jul 2015 - Oct 2015</span></span></div>
                   <div class="desc">Software Engineer Intern</div></div>
                 </li>

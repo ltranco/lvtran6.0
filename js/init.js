@@ -50,14 +50,6 @@ function initLVT() {
 		}
 		fade("#events", "#portfolio", "#resume");
 	});
-
-	var $window = $(window), $stickyEl = $('.control'), elTop = $stickyEl.offset().top;
-    $window.scroll(function() {
-    	if($window.scrollTop() == 0) {
-    		keepThisOffset = -1;
-    	}
-        $stickyEl.toggleClass('stickyControl', $window.scrollTop() > 411);
-    });
 }
 
 function fade(a, b, c, n) {

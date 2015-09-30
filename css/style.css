@@ -141,7 +141,7 @@ body {
 .stickyControl {
     padding: 10px 0 20px 0;
     width: 100%;
-    background-image: url("../images/bg.jpg");
+    background-image: url("../images/bg.png");
     position: fixed;
     top: 25px;
     z-index: 10;
@@ -293,7 +293,11 @@ table.hoverable > tbody > tr:hover {
     font-size: 13px;
     z-index: 9;
 }
-
+.flag svg {
+    width: 15px;
+    height: 15px;
+    margin: -2px;
+}
 .flag a {
     text-decoration: none !important;
 }
