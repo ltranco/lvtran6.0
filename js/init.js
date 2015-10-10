@@ -35,6 +35,7 @@ function initLVT() {
 		}
 		fade("#portfolio", "#resume", "#events");
 	});
+
 	$("#portfolioButton").click(function() {
 		if(keepThisOffset == -1) {
 			keepThisOffset = $(this).offset().top - 30;
@@ -42,6 +43,7 @@ function initLVT() {
 		}
 		fade("#events", "#resume", "#portfolio");
 	});
+
 	$("#resumeButton").click(function() {
 		if(keepThisOffset == -1) {
 			keepThisOffset = $(this).offset().top - 30;
@@ -49,6 +51,12 @@ function initLVT() {
 		}
 		fade("#events", "#portfolio", "#resume");
 	});
+}
+
+function fadeAll(a, b, c) {
+	$(a).fadeOut(n);
+	$(b).fadeOut(n);
+	$(c).fadeIn(n);
 }
 
 function fade(a, b, c, n) {
