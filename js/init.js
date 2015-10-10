@@ -1,3 +1,5 @@
+var parts = ["#events", "#resume", "#portfolio"];
+
 function initLVT() {
 	var cb = function() {
 		var l1 = document.createElement('link'); 
@@ -14,8 +16,6 @@ function initLVT() {
 	if (raf) raf(cb);
 	else window.addEventListener('load', cb);
 
-	var keepThisOffset = -1;
-
 	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
  		$("footer").html("<p>\"It doesn't matter if the glass is half empty or half full; all that matters is you're the one pouring the water.\" - Mark Cuban | Long Tran &copy; 2015");
  		$(".control").html('<a id="resumeButton" class="btn-floating btn-small"><i class="material-icons">assignment</i></a><a id="portfolioButton" class="btn-floating btn-small"><i class="material-icons">code</i></a><a id="eventsButton" class="btn-floating btn-small"><i class="material-icons">flight_takeoff</i></a>');
@@ -28,46 +28,46 @@ function initLVT() {
 			});
 		});
 	});
+
 	$("#eventsButton").click(function() {
-		if(keepThisOffset == -1) {
-			keepThisOffset = $(this).offset().top - 30;
-			$('html,body').animate({scrollTop: keepThisOffset}, 200);
-		}
-		fade("#portfolio", "#resume", "#events");
+		clickHandler("#events");
 	});
 
 	$("#portfolioButton").click(function() {
-		if(keepThisOffset == -1) {
-			keepThisOffset = $(this).offset().top - 30;
-			$('html,body').animate({scrollTop: keepThisOffset}, 200);
-		}
-		fade("#events", "#resume", "#portfolio");
+		clickHandler("#portfolio");
 	});
 
 	$("#resumeButton").click(function() {
-		if(keepThisOffset == -1) {
-			keepThisOffset = $(this).offset().top - 30;
-			$('html,body').animate({scrollTop: keepThisOffset}, 200);
-		}
-		fade("#events", "#portfolio", "#resume");
+		clickHandler("#resume");
 	});
 }
 
-function fadeAll(a, b, c) {
-	$(a).fadeOut(n);
-	$(b).fadeOut(n);
-	$(c).fadeIn(n);
+function clickHandler(q) {
+	if($(q).is(":visible")) {
+		$(q).slideUp(100);
+		$(q + "Button").css("backgroundColor", "black");
+	}
+	else {
+		keepThisOffset = $(q+"Button").offset().top - 18;
+		console.log(keepThisOffset);
+		$('html,body').animate({scrollTop: keepThisOffset}, 200);
+		$(q + "Button").css("backgroundColor", "#ff3232");
+		fade(q);
+	}
 }
 
-function fade(a, b, c, n) {
+function fade(q, n) {
 	if(!n) {
 		n = 250;
 	}
-	$(a).fadeOut(n);
-	$(b).fadeOut(n);
-	$(c).fadeIn(n);
-	$(a + "Button").css("backgroundColor", "black");
-	$(b + "Button").css("backgroundColor", "black");
-	$(c + "Button").css("backgroundColor", "#ff3232");
-	$("footer").css("position", "relative");
+	for(var i = 0; i < parts.length; i++) {
+		if(parts[i] == q) {
+			$(parts[i]).fadeIn(n);
+			$(q + "Button").css("backgroundColor", "#ff3232");
+		}
+		else {
+			$(parts[i]).fadeOut(n);
+			$(parts[i] + "Button").css("backgroundColor", "black");
+		}
+	}
 }
