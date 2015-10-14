@@ -453,7 +453,8 @@ footer {
     font-size: 13px;
     line-height: 17px;
     width: 100%;
-    font-weight: 300;
+    font-weight: 400;
+    color: #000;
 }
 
 footer a:hover {
