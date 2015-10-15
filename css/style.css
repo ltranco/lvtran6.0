@@ -123,15 +123,14 @@ body {
 /* Skill bars */
 .skillbar {
     vertical-align:middle;
-    max-width: 150px;
+    max-width: 115px;
     display: inline-block;
 }
 .progress {
     background-color: #d3d3d3;
 }
 .centeredContent {
-    margin-left: auto;
-    margin-right: auto;
+    padding: 0 10% 0 10%;
 }
 
 /* Control buttons */
@@ -246,6 +245,7 @@ table.hoverable > tbody > tr:hover {
 .timeline {
     position: relative;
     list-style-type: none;
+    padding: 0 0 0 7%;
     font-weight: lighter;
 }
 
@@ -370,7 +370,7 @@ table.hoverable > tbody > tr:hover {
 .time {
     display: inline-block;
     padding: 4px 6px;
-    background: #f8f8f8;
+    font-size: 10px;
 }
 .desc {
     color: #000;
@@ -450,7 +450,7 @@ footer {
     overflow: hidden;
     bottom: 0;
     font-family: 'Roboto';
-    font-size: 13px;
+    font-size: 14px;
     line-height: 17px;
     width: 100%;
     font-weight: 400;
