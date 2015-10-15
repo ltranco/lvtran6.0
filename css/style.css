@@ -381,7 +381,7 @@ table.hoverable > tbody > tr:hover {
 .direction-r .desc {
     margin-top: 5px;
 }
-
+/*
 @media screen and (max-width:660px) {
 .timeline {
     width: 100%;
@@ -403,16 +403,6 @@ table.hoverable > tbody > tr:hover {
 .flag, .flag a {
     font-weight: lighter;
     font-size: 13px;
-}
-.direction-l .flag:before, .direction-r .flag:before {
-    position: absolute;
-    content: ' ';
-    display: block;
-    width: 20px;
-    height: 20px;
-    background: #fff;
-    border-radius: 10px;
-    border: 4px solid black;
 }
 .direction-l .flag:after, .direction-r .flag:after {
     content: "";
@@ -444,7 +434,7 @@ table.hoverable > tbody > tr:hover {
 .direction-l .desc, .direction-r .desc {
     position: relative;
 }
-}
+}*/
 
 footer {
     text-align: center;
