@@ -187,6 +187,9 @@ table.hoverable > tbody > tr:hover {
     vertical-align: middle;
     display: none;
 }
+#events, #portfolio {
+    padding: 0 10% 0 10%;
+}
 .moreBadge, .techBadge {
     position: relative;
     display: inline-block;
@@ -252,9 +255,9 @@ table.hoverable > tbody > tr:hover {
 .timeline:before {
     position: absolute;
     content: ' ';
-    width: 3px;
+    width: 2px;
     height: 100%;
-    margin-left: 12px;
+    margin: -22px 0 0 13px;
     background: -moz-linear-gradient(top, rgba(80, 80, 80, 0) 0, #505050 8%, #505050 92%, rgba(80, 80, 80, 0) 100%);
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(30, 87, 153, 1)), color-stop(100%, rgba(125, 185, 232, 1)));
     background: -webkit-linear-gradient(top, rgba(80, 80, 80, 0) 0, #505050 8%, #505050 92%, rgba(80, 80, 80, 0) 100%);
@@ -265,7 +268,6 @@ table.hoverable > tbody > tr:hover {
 }
 .timeline li {
     padding: 0 0 20px 0;
-    margin-bottom: 15px;
 }
 .timeline li:after {
     content: "";
@@ -323,17 +325,17 @@ table.hoverable > tbody > tr:hover {
     top: 50%;
     content: ' ';
     display: block;
-    width: 15px;
-    height: 15px;
-    margin-top: -10px;
+    width: 8px;
+    height: 8px;
+    margin-top: -5px;
     background: #fff;
     border-radius: 10px;
     border: 1px solid black;
-    background: #D3D3D9;
+    background: #000;
     z-index: 10;
 }
 .direction-r .flag:before {
-    left: -40px;
+    left: -36px;
 }
 .direction-l .flag:after {
     content: "";
