@@ -33,3 +33,7 @@ RewriteRule . /index.php [L]
 </IfModule>
 
 # END WordPress
+
+# 404
+ErrorDocument 404 http://www.ltran.co/404.html
+
