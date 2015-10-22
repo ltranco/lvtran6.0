@@ -35,5 +35,5 @@ RewriteRule . /index.php [L]
 # END WordPress
 
 # 404
-ErrorDocument 404 http://www.ltran.co/404.html
+ErrorDocument 404 http://www.ltran.co/404/
 
