@@ -32,7 +32,7 @@ MG.game = (function () {
 
     var Messages = {
         START: {
-            title: getLevelString,
+            title: function() {return 'Adopted from Ben Mather\'s code';},
             text:  function () {return 'CLICK TO BEGIN';}
         },
         CRASH: {
