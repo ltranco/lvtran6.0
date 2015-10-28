@@ -232,10 +232,9 @@ table.hoverable > tbody > tr:hover {
     color: #fff;
 }
 .pTitle {
-    font-family: 'Source Sans Pro', sans-serif;
     font-weight: 500;
     text-decoration: underline;
-    font-size: 17px;
+    font-size: 20px;
     color: black;
 }
 .pTitle > img {
@@ -444,7 +443,7 @@ footer {
     overflow: hidden;
     bottom: 0;
     font-family: 'Georgia', serif;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 17px;
     width: 100%;
     font-weight: 300;
