@@ -130,7 +130,9 @@ body {
     background-color: #d3d3d3;
 }
 .centeredContent {
-    padding: 0 10% 0 10%;
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Control buttons */
