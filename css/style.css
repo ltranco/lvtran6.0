@@ -455,3 +455,8 @@ footer {
 footer a:hover {
     color: #ff3232;
 }
+
+footer p {
+    margin-bottom: 2px !important;
+    margin-top: 2px !important;
+}
