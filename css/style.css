@@ -86,6 +86,7 @@ body {
     font-weight: 400;
     font-size: 15px;
     display: inline-block;
+    margin: 0;
 }
 .headerCustom img {
     width: 30px;
@@ -121,6 +122,24 @@ body {
     margin: 0 0 0 10px;
 }
 /* Skill bars */
+.skill-history {
+    width: 272px !important;
+    margin-left: 5% !important;
+    margin-right: auto;
+}
+.skill-history p {
+    display: inline-block;
+}
+.skill-name {
+    margin: 0px !important;
+    margin-left: 15px !important;
+    font-size: 15px;
+}
+.skill-header {
+    font-size: 17px !important;
+    margin: 0 !important;
+    text-decoration: underline;
+}
 .skillbar {
     vertical-align:middle;
     max-width: 115px;
@@ -128,11 +147,6 @@ body {
 }
 .progress {
     background-color: #d3d3d3;
-}
-.centeredContent {
-    width: 350px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 /* Control buttons */
@@ -176,6 +190,8 @@ body {
 .categoryIcon {
     vertical-align: bottom;
     margin-right: 5px;
+    margin-bottom: 5px;
+    font-size: 17px !important;
 }
 
 /* Portfolio */
@@ -242,31 +258,45 @@ table.hoverable > tbody > tr:hover {
 .pTitle > img {
     float: left;
 }
+
+/*Work history */
+.work-history {
+    text-align: center;
+    padding: 10px;
+}
+.work-history p {
+    margin: 0 !important;
+}
+.work-history li {
+    margin-bottom: 15px;
+}
+.work-history .company {
+    font-size: 15px;
+    font-weight: 500;
+    display: inline;
+    text-decoration: underline;
+}
+.work-history .work-time {
+    font-size: 11px;
+    margin-left: 1px;
+    background-color: #f0f0f0;
+    border-radius: 7px;
+    font-weight: 200;
+    padding: 3px;
+}
+.work-history .work-title {
+    font-size: 13px;
+}
 /* Timeline */
 .timelinewrap {
     font-family: 'PT Sans', sans-serif;
-    padding: 5px 5px 5px 15px;
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .timeline {
-    position: relative;
     list-style-type: none;
-    padding: 0 0 0 7%;
     font-weight: lighter;
-}
-
-.timeline:before {
-    position: absolute;
-    content: ' ';
-    width: 2px;
-    height: 100%;
-    margin: -22px 0 0 13px;
-    background: -moz-linear-gradient(top, rgba(80, 80, 80, 0) 0, #505050 8%, #505050 92%, rgba(80, 80, 80, 0) 100%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(30, 87, 153, 1)), color-stop(100%, rgba(125, 185, 232, 1)));
-    background: -webkit-linear-gradient(top, rgba(80, 80, 80, 0) 0, #505050 8%, #505050 92%, rgba(80, 80, 80, 0) 100%);
-    background: -o-linear-gradient(top, rgba(80, 80, 80, 0) 0, #505050 8%, #505050 92%, rgba(80, 80, 80, 0) 100%);
-    background: -ms-linear-gradient(top, rgba(80, 80, 80, 0) 0, #505050 8%, #505050 92%, rgba(80, 80, 80, 0) 100%);
-    background: linear-gradient(to bottom, rgba(80, 80, 80, 0) 0, #505050 8%, #505050 92%, rgba(80, 80, 80, 0) 100%);
-    z-index: 1;
 }
 .timeline li {
     padding: 0 0 20px 0;
@@ -287,7 +317,7 @@ table.hoverable > tbody > tr:hover {
     position: relative;
     float: left;
     text-align: left;
-    padding-left: 45px;
+    padding-left: 30px;
 }
 .flag-wrapper {
     position: relative;
@@ -304,10 +334,11 @@ table.hoverable > tbody > tr:hover {
     z-index: 9;
     border: 1px solid;
 }
-.flag svg {
-    width: 15px;
-    height: 15px;
+svg {
+    width: 17px;
+    height: 17px;
     margin: -2px;
+    margin-right: 2px;
 }
 .flag a {
     text-decoration: none !important;
@@ -321,20 +352,6 @@ table.hoverable > tbody > tr:hover {
     -webkit-box-shadow: 1px 1px 1px rgba(0, 0, 0, .15), 0 0 1px rgba(0, 0, 0, .15);
     -moz-box-shadow: 1px 1px 1px rgba(0, 0, 0, .15), 0 0 1px rgba(0, 0, 0, .15);
     box-shadow: 1px 1px 1px rgba(0, 0, 0, .15), 0 0 1px rgba(0, 0, 0, .15);
-}
-.direction-l .flag:before, .direction-r .flag:before {
-    position: absolute;
-    top: 50%;
-    content: ' ';
-    display: block;
-    width: 8px;
-    height: 8px;
-    margin-top: -5px;
-    background: #fff;
-    border-radius: 10px;
-    border: 1px solid black;
-    background: #000;
-    z-index: 10;
 }
 .direction-r .flag:before {
     left: -36px;
@@ -350,20 +367,7 @@ table.hoverable > tbody > tr:hover {
     border-left-color: #f8f8f8;
     border-width: 8px;
     pointer-events: none;
-}/*
-.direction-r .flag:after {
-    content: "";
-    position: absolute;
-    right: 100%;
-    top: 50%;
-    height: 0;
-    width: 0;
-    margin-top: -8px;
-    border: solid transparent;
-    border-right-color: #f8f8f8;
-    border-width: 8px;
-    pointer-events: none;
-}*/
+}
 .time-wrapper {
     line-height: 1em;
     font-size: .66666em;
@@ -385,60 +389,6 @@ table.hoverable > tbody > tr:hover {
 .direction-r .desc {
     margin-top: 5px;
 }
-/*
-@media screen and (max-width:660px) {
-.timeline {
-    width: 100%;
-    z-index: 8;
-    font-weight: lighter;
-}
-.direction-l, .direction-r {
-    float: none;
-    width: 100%;
-    text-align: left;
-}
-.flag-wrapper {
-    text-align: left;
-}
-.flag {
-    background: #fff;
-}
-
-.flag, .flag a {
-    font-weight: lighter;
-    font-size: 13px;
-}
-.direction-l .flag:after, .direction-r .flag:after {
-    content: "";
-    position: absolute;
-    height: 0;
-    width: 0;
-    margin-left: 8px;
-    border: solid transparent;
-    border-bottom-color: #fff;
-    border-width: 8px;
-    pointer-events: none;
-}
-.time-wrapper {
-    display: block;
-    position: relative;
-    margin: 4px 0 0;
-}
-.direction-l .time-wrapper, .direction-r .time-wrapper {
-    float: none;
-}
-.desc {
-    position: relative;
-    background: #f5f5f5;
-    -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, .2);
-    -moz-box-shadow: 0 0 1px rgba(0, 0, 0, .2);
-    box-shadow: 0 0 1px rgba(0, 0, 0, .2);
-    font-weight: lighter;
-}
-.direction-l .desc, .direction-r .desc {
-    position: relative;
-}
-}*/
 
 footer {
     text-align: center;
