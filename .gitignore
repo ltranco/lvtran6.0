@@ -17,6 +17,7 @@ wp-content/
 lvtran5.0/
 hkgh/
 *.php
+!email.php
 mobile_test/
 .DS_Store
 potts/
