@@ -51,7 +51,7 @@ function initLVT() {
 		input_email = $(".freelance-proj-email-field").val();
 		if(input_email) {
 			email = "email=" + input_email;
-			$(".freelance-proj-email-button").val("✔");
+			$(".freelance-proj-email-button").val("Sent!");
 			$(".freelance-proj-email-field").val("");
 			$.ajax({
 				url:"http://ltran.co/js/email.php",
