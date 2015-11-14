@@ -46,6 +46,23 @@ function initLVT() {
 	$("#resumeButton").click(function() {
 		clickHandler("#resume");
 	});
+
+	$(".freelance-proj-email-button").click(function() {
+		//if($(".freelance-proj-email-field").val()) {
+		if(true) {
+			$.ajax({
+				url:"email.php",
+				type: "POST",
+				data: "email=v.long128@gmail.com",
+		      	success: function(data) {
+		         	console.log("success");
+		      	},
+		      	error: function(data) {
+		         	console.log("fail");
+		      	}
+			});
+		}
+	});
 }
 
 function changeQuote() {
@@ -62,7 +79,6 @@ function clickHandler(q) {
 	}
 	else {
 		keepThisOffset = $(q+"Button").offset().top - 18;
-		console.log(keepThisOffset);
 		$('html,body').animate({scrollTop: keepThisOffset}, 200);
 		$(q + "Button").css("backgroundColor", "#ff3232");
 		fade(q);

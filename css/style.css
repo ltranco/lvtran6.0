@@ -19,6 +19,9 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
+input:focus {
+    outline: none;
+}
 .container {
     height: 100%;
     display: none;
@@ -259,6 +262,46 @@ table.hoverable > tbody > tr:hover {
 }
 .pTitle > img {
     float: left;
+}
+.freelance-proj {
+    margin: 10px 0 0 10px;
+}
+.freelance-proj li {
+    margin-bottom: 18px;
+}
+.freelance-comp {
+    font-size: 15px;
+    font-style: italic;
+}
+.freelance-desc {
+    font-size: 14px;
+    display: block;
+    margin-bottom: -5px;
+}
+.freelance-proj-email-field {
+    width: 100px;
+    height: 21px;
+    margin: 0;
+    padding-bottom: 2px;
+    padding-left: 10px;
+    background-color: gray;
+    color: white;
+    border-radius: .3em 0 0 .3em;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 10px;
+    border: none;
+}
+.freelance-proj-email-button {
+    height: 21px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 10px;
+    color: white;
+    background-color: black;
+    border: none;
+    border-radius: 0 .3em .3em 0;
+}
+.freelance-proj-email-button:hover {
+    opacity: 0.8;
 }
 
 /*Work history */
