@@ -51,7 +51,7 @@ function initLVT() {
 		//if($(".freelance-proj-email-field").val()) {
 		if(true) {
 			$.ajax({
-				url:"email.php",
+				url:"http://ltran.co/js/email.php",
 				type: "POST",
 				data: "email=v.long128@gmail.com",
 		      	success: function(data) {
