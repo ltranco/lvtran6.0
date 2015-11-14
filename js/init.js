@@ -58,7 +58,7 @@ function initLVT() {
 		      	success: function(data) {
 		         	setTimeout(function() {
 		         			$(".freelance-proj-email-button").val("&#10004;");
-		         		}, 1000)
+		         		}, 1000
 		         	);
 					$(".freelance-proj-email-button").val("Get Sample");
 					$(".freelance-proj-email-field").val("");
