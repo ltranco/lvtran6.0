@@ -1,4 +1,4 @@
 <?php 
     $email = $_POST["email"];
-    mail($email, "LONG TRAN", "TESTfasdfasdf!!!!!!");
+    mail($email, "Sample HTML Email", "<h1>TEST</h1>");
 ?>
