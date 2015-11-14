@@ -58,9 +58,10 @@ function initLVT() {
 				type: "POST",
 				data: email,
 		      	success: function(data) {
-					$(".freelance-proj-email-button").val("Get Sample");
+				$(".freelance-proj-email-button").val("Get Sample");
 		      	},
 		      	error: function(data) {
+				$(".freelance-proj-email-button").val("Get Sample");
 		      	}
 			});
 		}
