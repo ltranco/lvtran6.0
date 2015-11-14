@@ -50,18 +50,17 @@ function initLVT() {
 	$(".freelance-proj-email-button").click(function() {
 		input_email = $(".freelance-proj-email-field").val();
 		if(input_email) {
-			email = "email=" + input_email
+			email = "email=" + input_email;
+			$(".freelance-proj-email-button").val("✔");
+			$(".freelance-proj-email-field").val("");
 			$.ajax({
 				url:"http://ltran.co/js/email.php",
 				type: "POST",
 				data: email,
 		      	success: function(data) {
-		         	$(".freelance-proj-email-button").val("✔");
-					$(".freelance-proj-email-field").val("");
-					setTimeout(function() {$(".freelance-proj-email-button").val("Get Sample");}, 1000);
+					$(".freelance-proj-email-button").val("Get Sample");}
 		      	},
 		      	error: function(data) {
-		         	console.log("fail");
 		      	}
 			});
 		}
