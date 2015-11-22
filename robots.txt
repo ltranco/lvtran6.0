@@ -7,7 +7,6 @@ Disallow: euler/
 Disallow: hacktive/
 Disallow: pixsnake/
 Disallow: pyro/
-sitemap.xml
 Disallow: wp-content/
 Disallow: lvtran5.0/
 Disallow: hkgh/
