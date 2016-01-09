@@ -1,2 +1,0 @@
-[14-Nov-2015 03:52:35 America/Denver] PHP Parse error:  syntax error, unexpected '$headers' (T_VARIABLE) in /home5/lvtranco/public_html/js/email.php on line 141
-[14-Nov-2015 03:54:13 America/Denver] PHP Parse error:  syntax error, unexpected '$headers' (T_VARIABLE) in /home5/lvtranco/public_html/js/email.php on line 6
