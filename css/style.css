@@ -108,12 +108,22 @@ input:focus {
     font-family: "Roboto", sans-serif;
     display: inline-block;
 }
+/* Social links */
 #myName ul{
     margin: 0 0 0 10px;
     display: inline-block;
 }
-#myName ul a:hover {
-    opacity: 0.7;
+.fa-facebook-square:hover {
+    color: #3b5998;
+}
+.fa-linkedin-square:hover {
+    color: #007bb5;
+}
+.fa-envelope-square:hover {
+    color: #dd4b39;
+}
+.fa-github-square:hover {
+    color: #333;
 }
 /* Skill bars */
 .skill-history {
@@ -123,6 +133,9 @@ input:focus {
 }
 .skill-history p {
     display: inline-block;
+}
+.skill-history .fa {
+    margin-right: 10px;
 }
 .skill-name {
     margin: 0px !important;
@@ -150,6 +163,12 @@ input:focus {
     text-align: center;
     margin-bottom: 30px;
     font-family: "Roboto", sans-serif;
+}
+.control i {
+    font-size: 20px;
+}
+.control i:hover {
+    opacity: 0.8;
 }
 .download {
     margin-top: 15px;
