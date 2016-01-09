@@ -220,6 +220,9 @@ table.hoverable > tbody > tr:hover {
     vertical-align: middle;
     display: none;
 }
+#resume .fa {
+    margin-right: 5px;
+}
 #events, #portfolio {
     padding: 0 10% 0 10%;
 }
