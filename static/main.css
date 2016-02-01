@@ -376,30 +376,6 @@ footer img {
     h4 {
         font-size: 1.9em;
     }
-   
-    .currently-learning {
-        width: 400px;
-    }
-
-    .past-projects {
-        width: 400px;
-        float: left;  
-    }
-
-    .sources {
-        width: 400px;
-        float: left;  
-    }
-
-    .contact-title {
-        width: 390px;
-    }
-
-    .connect-section p {
-        width: 370px;
-        float: left;
-        clear: left;
-    }
 
     footer img {
     padding-left: 20px;
@@ -428,43 +404,6 @@ footer img {
         font-size: 1.5em;
         padding: 0px;
     }
-
-    ul {
-        text-decoration: none;
-        font-family: "Maison Mono Light", "Consolas", monospace; font-weight:200; font-style:normal;
-        font-size: 12px;
-        float: left;
-        clear: left;
-        padding-top: 20px;  
-    }
-
-    .learning-list {
-        width: 295px;
-    }
-
-    .past-projects {
-        width: 390px;
-        float: left;  
-    }
-
-    .sources-list li {
-        margin-top: 18px;
-    }
-
-    .contact-title {
-        width: 390px;
-    }
-
-    .connect-section p {
-        width: 370px;
-        float: left;
-        clear: left;
-    }
-
-    .connect-list {
-        width: 320px;
-    }
-
 }
 
 @media only screen and (max-width: 480px) {
@@ -489,42 +428,6 @@ footer img {
         font-size: 1.5em;
         padding: 0px;
     }
-
-    ul {
-        text-decoration: none;
-        font-family: "Maison Mono Light", "Consolas", monospace; font-weight:200; font-style:normal;
-        font-size: 12px;
-        float: left;
-        padding-top: 20px;  
-    }
-
-    .learning-list {
-        width: 295px;
-    }
-
-    .past-projects {
-        width: 390px;
-        float: left;  
-    }
-
-    .sources-list li {
-        margin-top: 18px;
-    }
-
-    .contact-title {
-        width: 340px;
-        float: left;
-    }
-
-    .connect-section p {
-        width: 320px;
-        float: left;
-    }
-
-    .connect-list {
-        width: 320px;
-    }
-
 }
 
 @media only screen and (min-width: 320px) and (max-width: 400px){
@@ -563,32 +466,6 @@ footer img {
     h4 {
         font-size: 1.5em;
         padding: 0px;
-    }
-
-    ul {
-        text-decoration: none;
-        font-family: "Maison Mono Light", "Consolas", monospace; font-weight:200; font-style:normal;
-        font-size: 12px;
-        float: left;
-        padding-top: 20px;  
-    }
-
-    .past-projects {
-        width: 320px;
-        float: left;  
-    }
-
-    .sources-list li {
-        margin-top: 18px;
-    }
-
-    .contact-title {
-        width: 320px;
-        float: left;
-    }
-
-    .connect-list {
-        width: 320px;
     }
 }
 
