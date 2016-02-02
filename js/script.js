@@ -1,3 +1,14 @@
+var quotes = ["\"Musicians play their instruments. I play the orchestra.\" - <a target='blank' href='http://www.wsj.com/articles/apple-co-founders-allies-take-aim-at-hollywood-over-steve-jobs-1444000308'>The 'opportunistic Steve Jobs movie'</a>",
+            "\"It doesn't matter if the glass is half empty or half full; all that matters is you're the one pouring the water.\" - Mark Cuban"];
+var index = 0;
+
+function changeQuote() {
+    if(index == quotes.length) {
+        index = 0;
+    }
+    $("#quotes").html(quotes[index++]);
+}
+
 $(document).ready(function() {     
     $("h1").animate({color:"#ffffff"}, 600);
     $("h3").animate({color:"#ffffff"}, 600);
@@ -21,41 +32,31 @@ $(document).ready(function() { 
             return 0;
         }
     });
-}); 
 
-$(".freelance-proj-email-button").click(function() {
-    input_email = $(".freelance-proj-email-field").val();
-    if(input_email) {
-        email = "email=" + input_email;
-        $(".freelance-proj-email-button").val("Sent!");
-        $(".freelance-proj-email-field").val("");
-        $.ajax({
-            url:"http://ltran.co/js/email.php",
-            type: "POST",
-            data: email,
-            success: function(data) {
-                $(".freelance-proj-email-button").val("Get Sample");
-            },
-            error: function(data) {
-                $(".freelance-proj-email-button").val("Get Sample");
-        }
-        });
-    }
-});
-
-if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+    if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
         $("#kickass").hide();
-}
-
-var quotes = ["\"Musicians play their instruments. I play the orchestra.\" - <a target='blank' href='http://www.wsj.com/articles/apple-co-founders-allies-take-aim-at-hollywood-over-steve-jobs-1444000308'>The 'opportunistic Steve Jobs movie'</a>",
-            "\"It doesn't matter if the glass is half empty or half full; all that matters is you're the one pouring the water.\" - Mark Cuban"];
-var index = 0;
-
-setInterval(changeQuote, 10000);
-
-function changeQuote() {
-    if(index == quotes.length) {
-        index = 0;
     }
-    $("#quotes").html(quotes[index++]);
-}
+
+    $(".freelance-proj-email-button").click(function() {
+        console.log("test");
+        input_email = $(".freelance-proj-email-field").val();
+        if(input_email) {
+            email = "email=" + input_email;
+            $(".freelance-proj-email-button").val("Sent!");
+            $(".freelance-proj-email-field").val("");
+            $.ajax({
+                url:"http://ltran.co/js/email.php",
+                type: "POST",
+                data: email,
+                success: function(data) {
+                    $(".freelance-proj-email-button").val("Get Sample");
+                },
+                error: function(data) {
+                    $(".freelance-proj-email-button").val("Get Sample");
+            }
+            });
+        }
+    });
+
+    setInterval(changeQuote, 10000);
+}); 
