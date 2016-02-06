@@ -9,7 +9,16 @@ function changeQuote() {
     $("#quotes").html(quotes[index++]);
 }
 
-$(document).ready(function() {     
+$(document).ready(function() { 
+    var owl = $("#reading-list");
+    owl.owlCarousel({
+      navigation : true,
+      pagination: true,
+      singleItem:true
+
+
+    });
+
     $("h1").animate({color:"#ffffff"}, 600);
     $("h3").animate({color:"#ffffff"}, 600);
     $("header").animate({backgroundColor:"#131314"}, 0);

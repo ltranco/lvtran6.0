@@ -1,5 +1,4 @@
 /* Color */
-
 body {
     background-color: #131314;
     -webkit-user-select: auto;
@@ -69,6 +68,22 @@ h4 {
     color: #131314;
 }
 
+h5 {
+    font-family: "AvenirLT-Roman", Helvetica;
+    font-size: 1.3em;
+    font-weight: 500;
+    line-height: 1.3em;
+    color: #131314;
+}
+
+h6 {
+    font-family: "AvenirLT-Roman", Helvetica;
+    font-size: 0.8em;
+    font-weight: 400;
+    line-height: 1.3em;
+    color: #131314;
+}
+
 .about h4 {
     margin-top: 1em;
 }
@@ -101,7 +116,7 @@ nav a {
 
 #here {
     padding-top:100px;
-    -webkit-transition: all 2s ease;
+Â Â Â Â -webkit-transition: all 2s ease;
     -moz-transition: all 2s ease;
     transition: all 2s ease;
 
@@ -135,6 +150,7 @@ header {
     padding: 40px 0px 0px 0px;
     background-color: rgb(19, 19, 20);
     color: rgb(255, 255, 255);
+    z-index: 11111;
 }
 
 h1 {
@@ -296,7 +312,21 @@ section {
 .footer {
     text-align: center;
 }
-
+#reading-list {
+    position: relative !important;
+    margin-top: 20px;
+}
+.book img {
+    width: 150px;
+    height: 230px;
+    float: left;
+    margin: 0 20px 0 20px;
+}
+.book p {
+    padding: 0 15px 0 15px;
+    margin-top: 20px;
+    font-family: "AvenirLT-Roman", Helvetica;
+}
 /* Footer */
 footer {
    position:fixed;
