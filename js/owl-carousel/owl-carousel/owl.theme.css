@@ -13,17 +13,22 @@
 .owl-theme .owl-controls .owl-buttons div{
 	color: #FFF;
 	display: inline-block;
-	zoom: 1;
 	*display: inline;/*IE7 life-saver */
 	margin: 5px;
-	padding: 3px 10px;
-	font-size: 12px;
-	-webkit-border-radius: 30px;
-	-moz-border-radius: 30px;
-	border-radius: 30px;
-	background: #869791;
-	filter: Alpha(Opacity=50);/*IE7 fix*/
-	opacity: 0.5;
+	padding: 5px 10px 5px 10px;
+    font-size: 14px;
+	font-weight: 200;
+	-webkit-border-radius: .3em;
+	-moz-border-radius: .3em;
+	border-radius: .3em;
+	text-align: center;
+	text-decoration: none;
+    cursor: pointer;
+    background-color: #191919;
+    font-family: "AvenirLT-Roman", Helvetica;
+}
+.owl-theme .owl-controls .owl-buttons div:hover {
+	background-color: #ff5050;
 }
 /* Clickable class fix problem with hover on touch devices */
 /* Use it for non-touch hover action */
@@ -50,7 +55,7 @@
 	-webkit-border-radius: 20px;
 	-moz-border-radius: 20px;
 	border-radius: 20px;
-	background: #869791;
+	background: #191919;
 }
 
 .owl-theme .owl-controls .owl-page.active span,
