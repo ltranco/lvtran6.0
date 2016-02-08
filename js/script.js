@@ -15,8 +15,6 @@ $(document).ready(function() { 
       navigation : true,
       pagination: true,
       singleItem:true
-
-
     });
 
     $("h1").animate({color:"#ffffff"}, 600);
@@ -29,7 +27,7 @@ $(document).ready(function() { 
             $("h3").animate({color:"#ffffff"}, 600);
             $("header").animate({backgroundColor:"#131314"}, 600);
         }
-        else if (direction == "down") { 
+        else if (direction == "down") {
             $("h1").animate({color:"#131314"}, 600);
             $("body").animate({ backgroundColor: "#ffffff" }, 600);
             $("h3").animate({color:"#131314"}, 600);
