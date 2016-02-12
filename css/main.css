@@ -299,6 +299,9 @@ section {
     margin-top: 20px;
     font-family: "AvenirLT-Roman", Helvetica;
 }
+.book b {
+    font-weight: 600;
+}
 /* Footer */
 footer {
    position:fixed;
