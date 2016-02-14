@@ -113,14 +113,6 @@ nav a {
 }
 
 /* Composition */
-
-#here {
-    padding-top:100px;
-Â Â Â Â -webkit-transition: all 2s ease;
-    -moz-transition: all 2s ease;
-    transition: all 2s ease;
-
-}
 .animated.fadeIn {
     -webkit-animation-name:fadeIn;
     -moz-transition: fadeIn;
@@ -172,6 +164,12 @@ h3 {
     margin-top: 100px;
     margin-bottom: 50px;
     color: white;
+}
+
+.fa-chevron-down {
+    display: block !important;
+    text-align: center;
+    margin-top: 300px;
 }
 
 .socials li {
@@ -301,6 +299,9 @@ section {
 }
 .book b {
     font-weight: 600;
+}
+.book i {
+    font-style: italic;
 }
 /* Footer */
 footer {
@@ -473,4 +474,3 @@ footer img {
         padding: 0px;
     }
 }
-
