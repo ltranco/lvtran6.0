@@ -17,21 +17,28 @@ $(document).ready(function() { 
       singleItem:true
     });
 
-    $("h1").animate({color:"#ffffff"}, 600);
-    $("h3").animate({color:"#ffffff"}, 600);
+    var dur = 300;
+    $(".down-here").click(function() {
+        $("html,body").animate({
+          scrollTop: $(".concept-statement").offset().top + 100
+        }, dur);
+    });
+    
+    $("h1").animate({color:"#ffffff"}, dur);
+    $("h3").animate({color:"#ffffff"}, dur);
     $("header").animate({backgroundColor:"#131314"}, 0);
     $('.concept-statement').waypoint(function(direction) {
         if (direction == "up") {
-            $("h1").animate({color:"#ffffff"}, 600);
-            $("body").animate({ backgroundColor: "#131314" }, 600);
-            $("h3").animate({color:"#ffffff"}, 600);
-            $("header").animate({backgroundColor:"#131314"}, 600);
+            $("h1").animate({color:"#ffffff"}, {duration:dur, queue:false});
+            $("body").animate({ backgroundColor: "#131314" }, {duration:dur, queue:false});
+            $("h3").animate({color:"#ffffff"}, {duration:dur, queue:false});
+            $("header").animate({backgroundColor:"#131314"}, {duration:dur, queue:false});
         }
         else if (direction == "down") {
-            $("h1").animate({color:"#131314"}, 600);
-            $("body").animate({ backgroundColor: "#ffffff" }, 600);
-            $("h3").animate({color:"#131314"}, 600);
-            $("header").animate({backgroundColor:"#ffffff"}, 600);
+            $("h1").animate({color:"#131314"}, {duration:dur, queue:false});
+            $("body").animate({ backgroundColor: "#ffffff" }, {duration:dur, queue:false});
+            $("h3").animate({color:"#131314"}, {duration:dur, queue:false});
+            $("header").animate({backgroundColor:"#ffffff"}, {duration:dur, queue:false});
         }
     },
     {

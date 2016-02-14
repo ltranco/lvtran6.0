@@ -170,6 +170,10 @@ h3 {
     display: block !important;
     text-align: center;
     margin-top: 300px;
+    cursor: pointer;
+}
+.fa-chevron-down:hover {
+    opacity: 0.8;
 }
 
 .socials li {
