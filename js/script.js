@@ -18,6 +18,9 @@ $(document).ready(function() { 
     });
 
     var dur = 300;
+    setInterval(function() {
+        $(".down-here").effect("bounce", 1000)
+    }, 3000);
     $(".down-here").click(function() {
         $("html,body").animate({
           scrollTop: $(".concept-statement").offset().top + 100
