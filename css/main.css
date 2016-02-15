@@ -175,6 +175,11 @@ h3 {
     left: 0;
     right: 0;
     top: 20;
+    text-align: center;
+}
+.ui-effects-wrapper {
+    margin-left: auto !important;
+    margin-right: auto !important;
 }
 .fa-chevron-down {
     cursor: pointer;
