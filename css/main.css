@@ -319,6 +319,9 @@ section {
 .book i {
     font-style: italic;
 }
+.book .fa-apple {
+    font-style: inherit;
+}
 /* Footer */
 footer {
    position:fixed;
